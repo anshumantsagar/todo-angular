@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    /* background: #ebe6e6; */
+    background: #f6f6f6;
+}
+
+.main {
+    background: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid #eee;
+    border-radius: 5%;
+    box-shadow: 0 2px 3px #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.main h1{
+    background: #a7ebb2;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.main input {
+    padding:20px;
+    margin: 10px; 
+    border-top: 1px solid rgb(230, 229, 229);
+    border-bottom: 1px solid rgb(230, 229, 229);
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 10px;
+    outline: none;
+} 
+
+.main input:focus {
+    background: #a7ebb2;
+}
+
+.addButton {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    background: #a7ebb2;
+}
+
+.addButton:hover {
+    background: #84ba8d; 
+}
+
+.list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list ul li input{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.list ul li button {
+    margin-top: 15px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #a7ebb2;
+    outline: none;
+}
+
+.list ul li button:hover {
+    background: #84ba8d; 
+}
+
+
