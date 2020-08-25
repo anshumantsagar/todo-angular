@@ -2,7 +2,7 @@
   <div class="main">
     <h1>My ToDo App</h1>
     <input type="text"  [(ngModel)]="myInput"/>
-    <button (click)="addTask()" class="addButton">Add</button>
+    <button (click)="addTask($event)" class="addButton">Add</button>
     <section class="list">
       <ul *ngIf="allTasks.length !== 0">
         <li *ngFor="let item of allTasks; let indexing = index">

@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myInput:string;
-  allTasks= [] ;
+  allTasks = [] ;
 
-  addTask(){
+  addTask(event){
+    event.preventDefault();
     if(this.allTasks[0] == undefined) {
       this.allTasks.splice(0,1)
     }
@@ -22,7 +23,7 @@ export class AppComponent {
       this.allTasks.push(data);
       this.myInput = '';
     }
-  }
+  }  
 
   validation = () => {
     if (this.myInput !== '' || null || undefined) {
@@ -33,9 +34,8 @@ export class AppComponent {
   deleteTask = (index) => {
     this.allTasks.splice(index,1);
   }
+
   checkUncheck = (index) => {
-    let tempArr:any = this.allTasks;
     this.allTasks[index].checked = !this.allTasks[index].checked;
-    this.addTask = tempArr;
   }
 }
